@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: my-service
+  name: my-service1
 spec:
   selector:
-    app: nginx
+    app: nginx1
   ports:
   - port: 90
   type: LoadBalancer
