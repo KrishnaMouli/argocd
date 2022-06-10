@@ -5,4 +5,4 @@ resources:
   - ./loadbalancer.yaml
 images:
   - name: 637970045972.dkr.ecr.us-west-2.amazonaws.com/actions
-    newTag: actions
+    newTag: jack
