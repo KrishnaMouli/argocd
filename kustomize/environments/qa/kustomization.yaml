@@ -5,7 +5,7 @@ bases:
   - ../../application
 
 resources:
-      - ./loadbalancer.yaml
+  - ./loadbalancer.yaml
 
 patches:
   - target:
