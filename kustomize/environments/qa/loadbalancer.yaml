@@ -6,5 +6,5 @@ spec:
   selector:
     app: nginx1
   ports:
-  - port: 90
+  - port: 80
   type: LoadBalancer
