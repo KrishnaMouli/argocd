@@ -19,7 +19,7 @@ patches:
         path: "/metadata/labels/app"
         value: "nginx1"
       - op: replace
-        path: "/spec/selector/matchlabels/app"
+        path: "/spec/selector/matchLabels/app"
         value: "nginx1"
       - op: replace
         path: "/spec/template/metadata/labels/app"
