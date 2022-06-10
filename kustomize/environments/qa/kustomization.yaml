@@ -1,2 +1,26 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
 bases: 
   - ../../application
+
+resources:
+      - ./loadbalancer.yaml
+
+patches:
+  - target:
+      kind: Deployment
+      name: .*
+    patch: |-
+      - op: replace
+        path: "/metadata/name"
+        value: "deploy1"
+      - op: replace
+        path: "/metadata/labels/app"
+        value: "nginx1"
+      - op: replace
+        path: "/spec/selector/matchlabels/app"
+        value: "nginx1"
+      - op: replace
+        path: "/spec/template/metadata/labels/app"
+        value: "nginx1"
