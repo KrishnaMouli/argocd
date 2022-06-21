@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: 637970045972.dkr.ecr.us-west-2.amazonaws.com/actions:actions
+        image: 685951371890.dkr.ecr.us-west-2.amazonaws.com/actions:jack
         ports:
         - containerPort: 80
